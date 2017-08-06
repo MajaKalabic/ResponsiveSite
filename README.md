@@ -1,2 +1,2 @@
 # ResponsiveSite
-Single page web site
+Single page website
