@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Watches</title>
+<link rel="stylesheet" href="style.css" media="screen" title="no title" charser="utf-8">
+</head>
+<body>
+<nav id="nav" role="navigation">
+    <a href="#nav" title="Show navigation">Show navigation</a>
+    <a href="#" title="Hide navigation">Hide navigation</a>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li>
+            <a href="#" aria-haspopup="true">Watches</a>
+            <ul>
+                <li><a href="#woman">Woman</a></li>
+                <li><a href="#man">Man</a></li>
+            </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<div class="content">
+  <a id="home" class="smooth"></a>
+        <img src="./images/background.jpg" />
+    <p>We hold one of the widest collections of Mens and Ladies watches available. Our selection of watches is truly eclectic - it includes the finest Swiss luxury watches, from Breitling, TAG Heuer and Omega to some of the most stylish timepieces from sought after fashion brands such as Michael Kors, Emporio Armani, Hugo Boss and Olivia Burton. We have put together this vast and diverse collection of watches to ensure that we have the perfect watch to suit everyone.</p>
+
+</div>
+ 
+<div class="content">
+    <article class="smooth"><h2>Watches for ladies</h2>
+        <div class="watches" id="woman" >
+            <h2>Olivia Burton OB15BL22</h2>
+            <img src="./images/slika4.jpg"/>
+            <p>Inspired by vintage styles and the very latest trends to grace the world’s most prestigious fashion runways, Olivia Burton Watches capture the very heart of British design, creating timepieces that are wearable, stylish and accessible. </p>
+        </div>
+        <div class="watches">
+            <h2>Michael Kors MK5943 Ladies Watch</h2>
+            <img src="./images/slika5.jpg"/>
+            <p>It features a blue leather strap, a rose gold plated stainless steel case and has a blue with three hand movement, sub dial chronograph and date window dial.
+            </p>
+        </div>
+        <div class="watches">
+            <h2>Cartier Tank Française watch</h2>
+            <img src="./images/slika6.jpg"/>
+            <p>
+                The Tank Française has updated the legacy of the Tank wristwatch with a chain-link bracelet. The curved case, boldly set at the center of the bracelet to seamlessly mimic its lines, introduces a new Tank family that subscribes to the same modern design aesthetic. </p>
+        </div>
+    </article>
+</div>
+<hr/>
+<div class="content">
+    <article  class="smooth"><h2 >Watches for men</h2>
+        <div class="watches" id="man">
+            <h2>Fossil ME3104 automatic watch</h2>
+            <img src="./images/slika1.jpg"/>
+            <p>Handsome, sleek and effortlessly stylish, this Fossil ME3104 Automatic Watch is perfectly placed to take you from day to night with effortless ease. Featuring a sophisticated black leather strap, a crisp white skeleton style dial, and rose gold tone detailing, this wonderful timepiece has been designed to optimise functionality,
+                accuracy and reliability, ensuring that you’re always on time for life’s most important moments.</p>
+        </div>
+        <div class="watches">
+            <h2>Hugo Boss Blue 1513320 Watch</h2>
+            <img src="./images/slika2.jpg"/>
+            <p>It features a blue leather strap, a rose gold plated stainless steel case and has a blue with three hand movement, sub dial chronograph and date window dial.
+            </p>
+        </div>
+        <div class="watches">
+            <h2>Hugo Boss Blue 1513320 Watch</h2>
+            <img src="./images/slika3.jpg"/>
+            <p> With a strong focus on quality craftsmanship, technical capability, and style, this Breitling For Bentley BO6 Men’s Watch boasts a host of innovative user-friendly functions and features. Featuring a sleek stainless steel bracelet strap, a 30 second chronograph system that has the ability to provide accurate 1/8th second time readings, and a variable tachometer, this high performance
+                timepiece is the epitome of exclusive, technical watches that play a vital role in some of the world’s most challenging professions.</p>
+        </div>
+    </article>
+</div>
+<div class="content">
+<article id="about">></article> 
+</div>
+<div class="content">
+<article id="contact"></article> 
+</div>
+<footer>
+    <p>&copy Copyright Maja Kalabić</p>
+</footer>
+
+<script>
+	$( function()
+	{
+		$( '#nav li:has(ul)' ).doubleTapToGo();
+	});
+</script>
+<script>
+$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+    
+    return false;
+});
+</script>
+</body>
+</html>
